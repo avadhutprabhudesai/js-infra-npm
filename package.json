@@ -1,0 +1,38 @@
+{
+  "name": "js-infra-npm",
+  "version": "1.0.0",
+  "description": "A POC app to explore npm as a tool",
+  "main": "index.js",
+  "config": {
+    "PORT": "4000"
+  },
+  "scripts": {
+    "dev:lint": "echo \"linting for dev\"",
+    "dev:build": "echo \"creating a dev build\"",
+    "dev": "npm run dev:lint & npm run dev:build",
+    "dev:serve": "echo \"running dev server on port $npm_package_config_PORT\"",
+    "prod:lint": "echo \"linting for prod\"",
+    "prod:build": "echo \"creating a prod build\"",
+    "prod": "npm run prod:lint && npm run prod:build",
+    "prod:serve": "echo \"running prod server on port $npm_config_PORT\"",
+    "pretest": "echo \"pretest\"",
+    "test": "echo \"test\"",
+    "posttest": "echo \"posttest\"",
+    "print": "echo \"Package name: $npm_package_name\n Package Version: $npm_package_version\"",
+    "hello": "node scripts/hello.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avadhutprabhudesai/js-infra-npm.git"
+  },
+  "keywords": [
+    "npm-demo",
+    "npm-tool"
+  ],
+  "author": "Avadhut Prabhudesai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avadhutprabhudesai/js-infra-npm/issues"
+  },
+  "homepage": "https://github.com/avadhutprabhudesai/js-infra-npm#readme"
+}

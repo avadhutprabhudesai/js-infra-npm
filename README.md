@@ -1,0 +1,13 @@
+- POC
+  - parallel script execution
+    - npm run dev
+  - sequential script execution
+    - npm run prod
+  - pre and post hooks
+    - npm run test
+  - pass and access config values to scripts
+    - npm run prod:serve --PORT 8000
+  - write npm scripts in a separate files
+    - npm run hello -- --watch
+  - access package.json values in the script
+    - npm run print
